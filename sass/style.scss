@@ -1,0 +1,55 @@
+// sass C:\wamp64\www\Application_Meteo_JS\sass\style.scss C:\wamp64\www\Application_Meteo_JS\css\style.css
+// sass --watch C:\wamp64\www\Application_Meteo_JS\sass\style.scss:C:\wamp64\www\Application_Meteo_JS\css\style.css
+
+
+$colorBackground: #2980B9;
+$mainBackground: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+$webkit-mainBackground: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+
+body{
+    background: $colorBackground;
+    background: $mainBackground;
+    background: $webkit-mainBackground;
+    min-width: 400px;
+}
+.container{
+    margin: 10% auto;
+    display: block;
+    text-align: center;
+    max-width: 400px;
+
+    .main_screen{
+        margin-top: 5rem;
+    }
+
+    .title{
+        font-size: 3.5rem;
+        margin-bottom: 5px;
+    }
+
+    .ville{
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    .temperature{
+        font-size: 3.5rem;
+    }
+}
+.changer{
+    margin-top: 3px;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    span {
+        color: white;
+
+        &:hover{
+            color: red;
+            text-decoration: underline;
+        }
+    }
+}
+
